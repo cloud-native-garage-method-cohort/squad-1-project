@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: squad-1-project
+    app.kubernetes.io/instance: squad-1-project-instance
+    app.kubernetes.io/name: squad-1-project
+  name: squad-1-project
+spec:
+  ports:
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: 3000
+  selector:
+    app.kubernetes.io/instance: squad-1-project-instance
+    app.kubernetes.io/name: squad-1-project
+  sessionAffinity: None
+  type: ClusterIP
