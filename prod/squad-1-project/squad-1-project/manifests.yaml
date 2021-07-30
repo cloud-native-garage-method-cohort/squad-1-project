@@ -54,7 +54,7 @@ spec:
         - name: PROTOCOLS
         - name: LOG_LEVEL
           value: debug
-        image: quay.io/fabianschwab/emea-3-squad-1-project:d48622f943d47bc1ee21ebd786f76b01974d6322
+        image: quay.io/fabianschwab/emea-3-squad-1-project:6d891c746a18170d66d04366a62b8f6dd63f2be0
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
