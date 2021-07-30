@@ -11,6 +11,7 @@ COPY package*.json ./
 # Install all dependencies
 RUN npm ci
 
+RUN npm install nanoid
 # Copies files from source to destination, in this case the root of the build context
 # into the root of the WORKDIR
 COPY . .
